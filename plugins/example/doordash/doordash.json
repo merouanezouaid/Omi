@@ -1,0 +1,17 @@
+{
+    "id": "doordash",
+    "name": "DoorDash Voice Ordering",
+    "author": "Kaito",
+    "description": "Order food from DoorDash using voice commands",
+    "image": "/plugins/logos/doordash-voice-ordering-logo.jpg",
+    "capabilities": [
+      "external_integration"
+    ],
+    "external_integration": {
+      "triggers_on": "transcript_processed",
+      "webhook_url": "https://localhost:5000/endpoint",
+      "setup_completed_url": "https://localhost:5000/setup/doordash-login",
+      "setup_instructions_file_path": "/plugins/instructions/doordash-voice-ordering/README.md"
+    },
+    "deleted": false
+  }
